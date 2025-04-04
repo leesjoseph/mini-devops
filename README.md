@@ -1,4 +1,4 @@
-# 💫 About Me:
+# 💫 About This Project:
 I'm currently working on mini-kube project that runs with CI/CD with Github Actions and ArgoCD. I wrote the terraform script that create AWS Instance with VPC and security group.
 
 
