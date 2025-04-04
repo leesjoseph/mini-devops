@@ -16,7 +16,11 @@ RUN \
   rm -rf /var/lib/apt/lists/* && \
   echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
   wget https://www.free-css.com/assets/files/free-css-templates/download/page296/mediplus-lite.zip && \
-  unzip mediplus-lite.zip -d /usr/share/nginx/html
+  unzip mediplus-lite.zip -d /usr/share/nginx/html && \
+  rm -rf /usr/share/nginx/html/index.html && \
+  rm -rf /usr/share/nginx/html/mediplus-lite.zip && \
+  mv /usr/share/nginx/html/mediplus-lite/* /usr/share/nginx/html && \
+  rm -rf /usr/share/nginx/html/mediplus-lite
   
   #tar --strip-components=1 -zxvf wordpress.tgz -C /usr/share/nginx/html && \
   
