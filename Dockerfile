@@ -12,6 +12,7 @@ RUN \
   apt-get update && \
   apt-get install -y nginx && \
   apt-get install -y unzip && \
+  apt-get install -y wget && \
   rm -rf /var/lib/apt/lists/* && \
   echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
   wget https://www.free-css.com/assets/files/free-css-templates/download/page296/mediplus-lite.zip && \
