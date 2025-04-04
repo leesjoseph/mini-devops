@@ -1,5 +1,5 @@
 # 💫 About This Project:
-I'm currently working on mini-kube project that runs with CI/CD with Github Actions and ArgoCD. I wrote the terraform script that create AWS Instance with VPC and security group.
+I'm currently working on mini-kube project that runs CI/CD with Github Actions and ArgoCD. I wrote the terraform script that create AWS Instance with VPC and security group and bash script that creates s3 and dynamodb table for Backend in Terraform.
 
 
 # 💻 Used Skills:
