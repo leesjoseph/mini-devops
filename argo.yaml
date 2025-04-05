@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: webappone
+  namespace: argocd
+spec:
+  destination:
+    namespace: demo-app
+    name: in-cluster
+
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    # syncOptions:
+    # - CreateNamespace=true
+
+  source: 
+    repoURL: https://github.com/leesjoseph/mini-devops.git
+    path: argocd_deployment
+    targetRevision: HEAD
