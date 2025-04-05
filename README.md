@@ -1,6 +1,9 @@
 # 💫 About This Project:
 I'm currently working on mini-devops project that runs CI/CD with Github Actions and ArgoCD. I wrote the terraform script that create AWS Instance with VPC and security group and bash script that creates s3 and dynamodb table for Backend in Terraform.
 
+### Diagram:
+![Diagram](https://github.com/leesjoseph/mini-devops/blob/main/mini-devops.png)
+
 ### Terraform:
 
 1) Bash Script: creates S3 bucket and Dynamo DB table for Backend in Terraform.
